@@ -1,0 +1,42 @@
+
+.extraline
+{
+	display: table-row;
+	width:auto;
+	border:1px solid;
+	
+}
+
+.divTd
+{
+
+
+	display:table-column;
+	
+	border-style: solid;
+	border-color: black;
+	width: 200px;
+
+}
+.div-table{
+  display:table;         
+  width:350px;         
+  background-color:#eee;         
+  border:1px solid  #666666;         
+  border-spacing:5px;/*cellspacing:poor IE support for  this*/
+}
+.div-table-row{
+  display:table-row;
+  width:auto;
+  clear:both;
+}
+.div-table-col{
+  float:left;/*fix for  buggy browsers*/
+  display:table-column;         
+  width:100px;  
+  height: 100px;       
+  background-color:#ccc; 
+  border-bottom-color:black;
+  border-right-color: black; 
+  border-style: solid;
+}
