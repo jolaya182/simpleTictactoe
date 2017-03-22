@@ -21,7 +21,7 @@ var temp;
 			temp=document.createElement("div");
 			temp.classList.add("div-table-col");
 			temp.id=""+ j +""+i;
-			temp.appendChild(document.createTextNode("click"));
+			
 			temp.addEventListener("click", getIdClicked);
 			s.appendChild(temp);
 			var t=temp.id;
@@ -50,7 +50,7 @@ function getIdClicked()
 	if(taken(this.id)){alert("please click another box");return;}
 	mark(tempPlayer, this.id);
 
-	if( playerWon(tempPlayer)  ){ alert("congrats " + tempPlayer+ " you have won!" );  }
+	if( playerWon(tempPlayer)  ){  if(tempPlayer===1){ this.classList.add("x");}else{this.classList.add("o");}  alert("congrats " + tempPlayer+ " you have won!" ); }
 	//tie();
 	
 	console.log(tempPlayer);

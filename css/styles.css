@@ -41,9 +41,9 @@
   border-style: solid;
 }
 .x{
-background-image:url('images/x.png');
+background-image:url('../images/x.png');
 }
 .o{
 
-background-image:url('images/y.png');
+background-image:url('../images/o.png');
 }
