@@ -40,3 +40,10 @@
   border-right-color: black; 
   border-style: solid;
 }
+.x{
+background-image:url('images/x.png');
+}
+.o{
+
+background-image:url('images/y.png');
+}

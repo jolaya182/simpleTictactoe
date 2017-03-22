@@ -49,11 +49,12 @@ function getIdClicked()
 	//alert(this.id);
 	if(taken(this.id)){alert("please click another box");return;}
 	mark(tempPlayer, this.id);
+
 	if( playerWon(tempPlayer)  ){ alert("congrats " + tempPlayer+ " you have won!" );  }
 	//tie();
 	
 	console.log(tempPlayer);
-	if(tempPlayer===1){tempPlayer=2}else{tempPlayer=1}//switch player
+	if(tempPlayer===1){ this.classList.add("x");tempPlayer=2}else{this.classList.add("o");tempPlayer=1}//switch player
 		
 
 	return false;
